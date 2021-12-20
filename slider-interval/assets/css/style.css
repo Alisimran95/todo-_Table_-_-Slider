@@ -1,0 +1,147 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.heading input {
+  width: 300px;
+  height: 50px;
+  outline: none;
+  font-size: 30px;
+}
+
+.heading #click {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.heading h1 {
+  position: absolute;
+  visibility: hidden;
+  color: darkolivegreen;
+  font-size: 50px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.gallery {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 150px;
+  display: none;
+}
+
+.gallery a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery a .small {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 207px;
+  width: 300px;
+}
+
+.gallery-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+  display: none;
+}
+
+.gallery-inputs form input {
+  display: none;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0000008a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.popup .inner {
+  position: relative;
+}
+
+.popup .inner img {
+  width: 700px;
+}
+
+.popup .inner .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup .inner .close i {
+  font-size: 25px;
+  color: white;
+}
+
+.popup .inner .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.popup .inner .arrows i {
+  cursor: pointer;
+  font-size: 25px;
+  color: white;
+}
